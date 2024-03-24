@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <title>Traveling</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>
+      <h1>
+        <b> Welcome to <span id="typing-text"></span></b>
+      </h1>
+    </h1>
+
+    <a href="about.html" class="myButton">Explore more Details</a>
+  </body>
+</html>
+<script>
+  const text = "Traveling Life";
+  let charIndex = 0;
+  const typingText = document.getElementById("typing-text");
+
+  function type() {
+    typingText.textContent = text.slice(0, charIndex++);
+    if (charIndex <= text.length) {
+      setTimeout(type, 200); // Adjust 100 to your desired delay in milliseconds
+    }
+  }
+
+  type();
+</script>
+<style>
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    /* Additional background properties can be added here */
+  }
+  #typing-text {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 18ch; /* Adjust according to your text length */
+    animation: typing 2s steps(18) infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 18ch;
+    } /* Adjust according to your text length */
+  }
+  h1 {
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+  }
+
+  h2 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    margin: 100px;
+  }
+
+  P {
+    color: rgb(243, 0, 0);
+    font-size: 18px;
+  }
+
+  a {
+    color: rgb(0, 255, 34);
+    font-size: 20px;
+    margin: 50px;
+  }
+
+  body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    /* Additional background properties can be added here */
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+
+  p {
+    color: blanchedalmond;
+    font-size: 20px;
+  }
+
+  .myButton {
+    background-color: #000000; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .myButton:hover {
+    background-color: rgb(255, 221, 169);
+    color: #000000;
+  }
+  .footer {
+    color: rgb(253, 248, 240);
+  }
+</style>
+
+<css>
+  <!DOCTYPE html>
+  <html>
+    <div>
+      <p>
+        Visit My website To See our Desired Tourist Spots And Know More Details
+      </p>
+    </div>
+    <br />
+    <center>
+      <small class="footer"
+        >Design by <b>Chanka</b> | Powerd by <b>Sri lanka Traveling</b></small
+      >
+    </center>
+  </html>
+</css>
